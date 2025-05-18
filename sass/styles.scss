@@ -1,1 +1,56 @@
 @use "_variables.scss";
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// CONTAINER GLOBAL
+.container-global {
+  display: grid;
+  grid-column: 2fr 3fr 1fr;
+  font-family: "Oswald", sans-serif;
+
+  header {
+    background-color: $bg-header;
+  }
+
+  main {
+    background-color: $bg-primary;
+  }
+
+  footer {
+    background-color: $bg-footer;
+  }
+}
+
+// HEADER
+.header {
+  height: 60px;
+
+  h1 {
+    font-family: "Exile", system-ui;
+  }
+
+  section {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 10px;
+
+    border: none;
+    i {
+      color: #9acbd0;
+      font-size: 24px;
+    }
+  }
+  .sidebar {
+    background-color: $bg-header;
+  }
+}
+// HEADER
