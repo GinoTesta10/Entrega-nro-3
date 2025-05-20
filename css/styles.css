@@ -23,8 +23,11 @@
   height: 60px;
   border-bottom: 8px #9acbd0 solid;
 }
-.header h1 {
+.header .h1-bt-home {
+  text-decoration: none;
+  color: inherit;
   font-family: "Exile", system-ui;
+  font-size: 35px;
 }
 .header section {
   padding-top: 8px;
@@ -151,6 +154,16 @@
     color: #9acbd0;
     transform: none !important;
   }
+  i .nav-desktop a:visited {
+    color: #9acbd0;
+    transform: none !important;
+  }
+  .anchord-active:visited {
+    color: #f2efe7 !important;
+  }
+  .item-nav:hover {
+    transform: scale(1.2);
+  }
 }
 .section-card {
   display: flex !important;
@@ -196,6 +209,9 @@
     margin-right: 30px;
     text-decoration: none;
     color: #9acbd0;
+  }
+  .header .anchord-active:visited {
+    color: #f2efe7 !important;
   }
   .item-nav:hover {
     transform: scale(1.2);

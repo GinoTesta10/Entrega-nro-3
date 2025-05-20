@@ -31,8 +31,11 @@
   height: 60px;
   border-bottom: 8px $color-border solid;
 
-  h1 {
+  .h1-bt-home {
+    text-decoration: none;
+    color: inherit;
     font-family: "Exile", system-ui;
+    font-size: 35px;
   }
 
   section {
@@ -173,6 +176,20 @@
         color: #9acbd0;
         transform: none !important;
       }
+      i &:visited {
+        color: #9acbd0;
+        transform: none !important;
+      }
+    }
+  }
+  .anchord-active {
+    &:visited {
+      color: $bg-primary !important;
+    }
+  }
+  .item-nav {
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }
@@ -229,6 +246,11 @@
         margin-right: 30px;
         text-decoration: none;
         color: #9acbd0;
+      }
+    }
+    .anchord-active {
+      &:visited {
+        color: $bg-primary !important;
       }
     }
   }
