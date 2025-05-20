@@ -31,8 +31,11 @@
   height: 60px;
   border-bottom: 8px $color-border solid;
 
-  h1 {
+  .h1-bt-home {
+    text-decoration: none;
+    color: inherit;
     font-family: "Exile", system-ui;
+    font-size: 35px;
   }
 
   section {
@@ -44,7 +47,6 @@
   button {
     background-color: transparent;
     padding: 10px;
-
     border: none;
     i {
       color: #9acbd0;
@@ -170,12 +172,28 @@
       margin-right: 30px;
       text-decoration: none;
       color: #9acbd0;
-      &visited {
-        color: $bg-primary;
+      &:hover {
+        color: #9acbd0;
+        transform: none !important;
+      }
+      i &:visited {
+        color: #9acbd0;
+        transform: none !important;
       }
     }
   }
+  .anchord-active {
+    &:visited {
+      color: $bg-primary !important;
+    }
+  }
+  .item-nav {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
+
 // HEADER
 
 // MAIN
@@ -228,40 +246,53 @@
         margin-right: 30px;
         text-decoration: none;
         color: #9acbd0;
-        &visited {
-          color: $bg-primary;
-        }
+      }
+    }
+    .anchord-active {
+      &:visited {
+        color: $bg-primary !important;
       }
     }
   }
-  // HEADER
-  // MAIN
-  .main {
-    section {
-      @include flex-main-desktop;
-    }
-    h4 {
-      padding: 20px;
-      font-size: 40px;
-      text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+  .item-nav {
+    &:hover {
+      transform: scale(1.2);
     }
   }
-  // MAIN
-  // FOOTER
-  .footer {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h4 {
-      margin-bottom: 20px;
-      font-size: 30px;
-    }
-    div {
-      font-size: 30px;
-      gap: 100px;
-    }
-  }
-  // FOOTER
 }
+// HEADER
+// MAIN
+.main {
+  section {
+    @include flex-main-desktop;
+    a {
+      &:hover {
+        @include transition;
+      }
+    }
+  }
+  h4 {
+    padding: 20px;
+    font-size: 40px;
+    text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+  }
+}
+// MAIN
+// FOOTER
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  div {
+    font-size: 30px;
+    gap: 100px;
+  }
+}
+// FOOTER
+
 // DESKTOP
