@@ -23,11 +23,24 @@
     />
   </head>
   <body>
-    <div class="container row g-0 container-global">
+    <div class="container-fluid row g-0 container-global">
       <header class="header">
         <section class="sidebar">
           <h1>Urban Room</h1>
-          <nav>
+          <!-- NAVBAR TABLET & DESKTOP -->
+          <article class="nav-desktop">
+            <nav class="nav nav-pills nav-fill">
+              <a class="nav-link" href="#">Active</a>
+              <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Disabled</a>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </nav>
+          </article>
+          <!-- NAVBAR TABLET & DESKTOP -->
+          <nav class="sidebar-mobile">
             <button
               class="btn btn-primary"
               type="button"
@@ -46,9 +59,6 @@
               aria-labelledby="offcanvasWithBothOptionsLabel"
             >
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                  Hola
-                </h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -56,18 +66,95 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body">
-                <p>
-                  Try scrolling the rest of the page to see this option in
-                  action.
-                </p>
+              <div class="offcanvas-body sidebar-items">
+                <section>
+                  <h3>¿Que andas buscando?</h3>
+                  <a href="#"
+                    ><i class="fa-solid fa-cart-shopping icon-sidebar"></i
+                  ></a>
+                </section>
+                <ul>
+                  <a href="">Accesorios</a>
+                  <a href="">Calzado</a>
+                  <a href="">Remeras</a>
+                  <a href="">Pantalones</a>
+                </ul>
               </div>
             </div>
           </nav>
         </section>
       </header>
-      <main class="main">soy</main>
-      <footer class="footer">geno</footer>
+      <!-- MAIN -->
+      <main class="main">
+        <h4>Promos semanales</h4>
+        <!-- CARD 1 -->
+        <section class="section-card">
+          <div class="card card-global" style="width: 18rem">
+            <img
+              src="./assets/adidas campus.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body card-bg">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <!-- CARD 1 -->
+
+          <!-- CARD 2 -->
+          <div class="card card-global" style="width: 18rem">
+            <img
+              src="./assets/adidas campus.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body card-bg">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+
+          <!-- CARD 3 -->
+          <div class="card card-global" style="width: 18rem">
+            <img
+              src="./assets/adidas campus.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body card-bg">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+        </section>
+      </main>
+      <!-- MAIN -->
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <h4>Redes sociales</h4>
+        <div class="icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </footer>
+      <!-- FOOTER -->
     </div>
 
     <script
