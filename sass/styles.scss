@@ -72,6 +72,13 @@
       }
     }
   }
+  .nav-desktop {
+    display: none;
+  }
+  .icon-sidebar {
+    color: $bg-primary;
+    font-size: 25px;
+  }
 }
 // HEADER
 
@@ -139,3 +146,122 @@
     padding-bottom: 5px;
   }
 }
+
+// TABLET
+// HEADER
+@media (min-width: 810px) and (max-width: 1140px) {
+  .header {
+    height: 100px;
+    .sidebar-mobile {
+      display: none;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .nav-desktop {
+    display: flex !important;
+    flex-direction: row;
+    a {
+      display: flex;
+      margin-right: 30px;
+      text-decoration: none;
+      color: #9acbd0;
+      &visited {
+        color: $bg-primary;
+      }
+    }
+  }
+}
+// HEADER
+
+// MAIN
+.section-card {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+// MAIN
+
+// FOOTER
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  div {
+    font-size: 30px;
+    gap: 100px;
+  }
+}
+// FOOTER
+// TABLET
+
+// DESKTOP
+@media (min-width: 1140px) {
+  // HEADER
+  .header {
+    height: 100px;
+
+    .sidebar-mobile {
+      display: none;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-desktop {
+      display: flex;
+      flex-direction: row;
+      a {
+        display: flex;
+        margin-right: 30px;
+        text-decoration: none;
+        color: #9acbd0;
+        &visited {
+          color: $bg-primary;
+        }
+      }
+    }
+  }
+  // HEADER
+  // MAIN
+  .main {
+    section {
+      @include flex-main-desktop;
+    }
+    h4 {
+      padding: 20px;
+      font-size: 40px;
+      text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+    }
+  }
+  // MAIN
+  // FOOTER
+  .footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    div {
+      font-size: 30px;
+      gap: 100px;
+    }
+  }
+  // FOOTER
+}
+// DESKTOP

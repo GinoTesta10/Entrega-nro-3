@@ -23,11 +23,24 @@
     />
   </head>
   <body>
-    <div class="container row g-0 container-global">
+    <div class="container-fluid row g-0 container-global">
       <header class="header">
         <section class="sidebar">
           <h1>Urban Room</h1>
-          <nav>
+          <!-- NAVBAR TABLET & DESKTOP -->
+          <article class="nav-desktop">
+            <nav class="nav nav-pills nav-fill">
+              <a class="nav-link" href="#">Active</a>
+              <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Disabled</a>
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </nav>
+          </article>
+          <!-- NAVBAR TABLET & DESKTOP -->
+          <nav class="sidebar-mobile">
             <button
               class="btn btn-primary"
               type="button"
@@ -54,7 +67,12 @@
                 ></button>
               </div>
               <div class="offcanvas-body sidebar-items">
-                <h3>¿Que andas buscando?</h3>
+                <section>
+                  <h3>¿Que andas buscando?</h3>
+                  <a href="#"
+                    ><i class="fa-solid fa-cart-shopping icon-sidebar"></i
+                  ></a>
+                </section>
                 <ul>
                   <a href="">Accesorios</a>
                   <a href="">Calzado</a>

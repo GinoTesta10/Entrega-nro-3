@@ -2,3 +2,16 @@ $bg-primary: #f2efe7;
 $bg-header: #006a71;
 $bg-footer: #48a6a7;
 $color-border: #9acbd0;
+@mixin flex-main-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flex-direction-column-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
