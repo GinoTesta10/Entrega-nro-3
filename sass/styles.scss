@@ -44,7 +44,6 @@
   button {
     background-color: transparent;
     padding: 10px;
-
     border: none;
     i {
       color: #9acbd0;
@@ -170,12 +169,14 @@
       margin-right: 30px;
       text-decoration: none;
       color: #9acbd0;
-      &visited {
-        color: $bg-primary;
+      &:hover {
+        color: #9acbd0;
+        transform: none !important;
       }
     }
   }
 }
+
 // HEADER
 
 // MAIN
@@ -228,40 +229,48 @@
         margin-right: 30px;
         text-decoration: none;
         color: #9acbd0;
-        &visited {
-          color: $bg-primary;
-        }
       }
     }
   }
-  // HEADER
-  // MAIN
-  .main {
-    section {
-      @include flex-main-desktop;
-    }
-    h4 {
-      padding: 20px;
-      font-size: 40px;
-      text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+  .item-nav {
+    &:hover {
+      transform: scale(1.2);
     }
   }
-  // MAIN
-  // FOOTER
-  .footer {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h4 {
-      margin-bottom: 20px;
-      font-size: 30px;
-    }
-    div {
-      font-size: 30px;
-      gap: 100px;
-    }
-  }
-  // FOOTER
 }
+// HEADER
+// MAIN
+.main {
+  section {
+    @include flex-main-desktop;
+    a {
+      &:hover {
+        @include transition;
+      }
+    }
+  }
+  h4 {
+    padding: 20px;
+    font-size: 40px;
+    text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+  }
+}
+// MAIN
+// FOOTER
+.footer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  div {
+    font-size: 30px;
+    gap: 100px;
+  }
+}
+// FOOTER
+
 // DESKTOP

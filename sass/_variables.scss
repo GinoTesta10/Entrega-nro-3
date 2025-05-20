@@ -15,3 +15,9 @@ $color-border: #9acbd0;
   align-items: center;
   justify-content: center;
 }
+@mixin transition {
+  background-color: $bg-header;
+  color: $color-border;
+  transform: scale(0.3s) ease-in;
+  transition: color 0.3s ease-in;
+}
