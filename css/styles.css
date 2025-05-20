@@ -58,6 +58,13 @@
   text-decoration: none;
   color: inherit;
 }
+.header .nav-desktop {
+  display: none;
+}
+.header .icon-sidebar {
+  color: #f2efe7;
+  font-size: 25px;
+}
 
 .main {
   min-height: 100vh;
@@ -131,7 +138,7 @@
     align-items: center;
   }
   .nav-desktop {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
   }
   .nav-desktop a {
@@ -191,6 +198,18 @@
   }
   .header .nav-desktop avisited {
     color: #f2efe7;
+  }
+  .main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main h4 {
+    padding: 20px;
+    font-size: 40px;
+    text-shadow: 0px 0px 3px rgb(72, 166, 167);
   }
   .footer {
     height: 300px;

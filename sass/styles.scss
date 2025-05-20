@@ -72,6 +72,13 @@
       }
     }
   }
+  .nav-desktop {
+    display: none;
+  }
+  .icon-sidebar {
+    color: $bg-primary;
+    font-size: 25px;
+  }
 }
 // HEADER
 
@@ -156,7 +163,7 @@
     }
   }
   .nav-desktop {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     a {
       display: flex;
@@ -229,7 +236,16 @@
   }
   // HEADER
   // MAIN
-
+  .main {
+    section {
+      @include flex-main-desktop;
+    }
+    h4 {
+      padding: 20px;
+      font-size: 40px;
+      text-shadow: 0px 0px 3px rgba(72, 166, 167, 1);
+    }
+  }
   // MAIN
   // FOOTER
   .footer {
